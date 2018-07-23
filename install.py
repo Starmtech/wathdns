@@ -15,10 +15,10 @@ import shutil
 #   print 'aucune version compatible pour le moment'
 
 print 'installation de python-dnspython'
-apt install python-dnspython
+os.system("apt install python-dnspython")
 
 print 'installation de libsqlite3-dev'
-apt install libsqlite3-dev
+os.system("apt install libsqlite3-dev")
 
 PATH = os.path.dirname(os.path.abspath(__file__))
 if os.path.isdir('/opt/wathdns') == False:
