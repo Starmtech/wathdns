@@ -40,7 +40,7 @@ def bdd(country,limit):
    try:
       iplist = []
       countrylist = []
-      conn = sqlite3.connect('/home/jerome/Bureau/wathdns/wathdns.db')
+      conn = sqlite3.connect('/opt/wathdns/wathdns.db')
       cursor = conn.cursor()
 
       if len(country) == 2:
